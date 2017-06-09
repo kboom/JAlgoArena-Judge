@@ -73,6 +73,7 @@ defaultTasks 'clean', 'bootRepackage'
 
 bootRun {
     systemProperty 'sun.zip.disableMemoryMapping', 'true'
+    systemProperty 'server.port', Integer.getInteger('server.port', 8080)
 }
 
 task stage {
